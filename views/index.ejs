@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diary System</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .Diary {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .action {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .action button {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .action button:hover {
+            background-color: #0056b3;
+        }
+
+        .action form {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Diary">
+        <h2>Diary System</h2>
+        <div class="action">
+            <form action="/create"><button>Create</button></form>
+            <form action="/delete"><button>Delete</button></form>
+            <form action="/read"><button>Read</button></form>
+            <form action="/edit"><button>edit</button></form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
